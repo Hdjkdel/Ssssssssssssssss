@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Cüzdan Tarama</title>
+  <link rel="stylesheet" href="bnb.css">
+</head>
+<body>
+
+  <div class="container">
+    <h3>BNB Adresi</h3>
+    <textarea id="walletAddress" readonly></textarea>
+
+    <h3>Özel Anahtar</h3>
+    <textarea id="privateKey" readonly></textarea>
+
+    <h3>Bakiyeler</h3>
+    <textarea id="balance" readonly></textarea>
+
+    <p id="status"></p>
+
+    <button onclick="startScanning()">Başlat</button>
+    <button onclick="stopScanning()">Durdur</button>
+  </div>
+
+  <!-- Web3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <script src="bnb.js"></script>
+
+</body>
+</html>

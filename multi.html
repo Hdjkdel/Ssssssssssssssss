@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Tarama</title>
+  <link rel="stylesheet" href=" multi.css">
+</head>
+<body>
+
+  <div class="container">
+<!#₺##########################################################################################################>
+    <p>Ethereum (ETH)</p>
+    <textarea id="ethWallet" readonly></textarea>
+    <textarea id="ethPrivateKey" readonly></textarea>
+    <textarea id="ethBalance" readonly></textarea>
+<!#₺##########################################################################################################>
+    <p>Binance Smart Chain (BNB)</p>
+    <textarea id="bnbWallet" readonly></textarea>
+    <textarea id="bnbPrivateKey" readonly></textarea>
+    <textarea id="bnbBalance" readonly></textarea>
+<!#₺##########################################################################################################>
+    <p>Solana (SOL)</p>
+    <textarea id="solWallet" readonly></textarea>
+    <textarea id="solPrivateKey" readonly></textarea>
+    <textarea id="solBalance" readonly></textarea>
+<!#₺##########################################################################################################>
+    <h3></h3>
+    <p id="status"></p>
+
+    <button onclick="startScanning()">Başlat</button>
+    <button onclick="stopScanning()">Durdur</button>
+  </div>
+<!##########################################################################################################>
+  <!-- Web3.js ve Solana Web3 -->
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <!#₺##########################################################################################################>
+  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+  <script src="multi.html" ></script>
+
+</body>
+</html>

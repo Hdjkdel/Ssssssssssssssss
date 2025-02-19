@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOL Cüzdan Tarama</title>
+  <link rel="stylesheet" href="sol.css">
+</head>
+<body>
+
+  <div class="container">
+    <h3>Solana Adresi</h3>
+    <textarea id="walletAddress" readonly></textarea>
+
+    <h3>Özel Anahtar</h3>
+    <textarea id="privateKey" readonly></textarea>
+
+    <h3>Bakiyeler</h3>
+    <textarea id="balance" readonly></textarea>
+
+    <p id="status"></p>
+    
+    <button onclick="startScanning()">Başlat</button>
+    <button onclick="stopScanning()">Durdur</button>
+  </div>
+
+  <!-- Solana Web3.js -->
+  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+  <script src="sol.js"></script>
+
+</body>
+</html>
